@@ -4,6 +4,10 @@
     "./node_modules/standard/eslintrc.json"
   ],
   "rules": {
-    "space-before-function-paren":"off"
+    "space-before-function-paren":"off",
+    "indent": [2, "tab"],
+    "react/jsx-indent": [2, "tab"],
+    "no-tabs": 0,
+	  "eol-last": 0
   }
 }

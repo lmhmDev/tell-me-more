@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Layout from '@/components/Layout'
+import Dialogue from '@/components/Dialogue'
 
 export default function Home() {
 	return (
@@ -6,6 +8,11 @@ export default function Home() {
 			<Head>
 				<title>Tell me more</title>
 			</Head>
+			<Layout>
+				<>
+					<Dialogue />
+				</>
+			</Layout>
 		</>
 	)
 }

@@ -6,6 +6,7 @@ module.exports = {
 			colors: {
 				mainBg: '#FFD9DA',
 				mainColor: '#EA638C',
+				mainColorHover: '#E7527F',
 				textColor: '#30343F'
 			}
 		}

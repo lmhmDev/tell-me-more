@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
-import Dialogue from '@/components/Dialogue'
+import ChatForm from '@/components/ChatForm'
 
 export default function Home() {
 	return (
@@ -10,7 +10,7 @@ export default function Home() {
 			</Head>
 			<Layout>
 				<>
-					<Dialogue />
+					<ChatForm />
 				</>
 			</Layout>
 		</>

@@ -2,20 +2,20 @@ import SendIcon from '@/utils/icons'
 import React, { useEffect, useRef, useState } from 'react'
 
 export type Props = {
-	children: React.ReactElement<any, string | React.JSXElementConstructor<any>>
+	fetchData: any
 }
 
-export default function ChatForm({ fetchData }) {
+export default function ChatForm({ fetchData }: Props) {
 	const inputRef = useRef(null)
 	const [value, setValue] = useState('')
 
-	const submit = async (e) => {
+	const submit = async (e:any) => {
 		e.preventDefault()
 		fetchData(value)
 		setValue('')
 	}
 
-	const onChange = (e) => {
+	const onChange = (e:any) => {
 		setValue(e.target.value)
 	}
 

@@ -1,11 +1,13 @@
 type Props = {
-	fact:string
+	fact:string,
+	loading:boolean,
+	error:string
 }
 
-export default function Fact({ fact }: Props) {
+export default function Fact({ fact, loading, error }: Props) {
 	return (
 		<div className='max-w-sm px-5'>
-			<p>{fact}</p>
+			{error ? 'Error' : loading ? 'Loading...' : <p>{fact}</p>}
 		</div>
 	)
 }

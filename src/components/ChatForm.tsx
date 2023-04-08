@@ -20,7 +20,7 @@ export default function ChatForm({ fetchData }: Props) {
 	}
 
 	useEffect(() => {
-		inputRef.current.focus()
+		inputRef?.current?.focus()
 	}, [])
 
 	return (

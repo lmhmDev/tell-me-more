@@ -27,9 +27,11 @@ export default function ChatForm({ fetchData }: Props) {
 		<>
 			<form onSubmit={submit}>
 				<div className='flex relative'>
-					<p className='absolute -top-5 text-gray-500 text-xs'>Tell me something about...</p>
-					<input ref={inputRef} onChange={onChange} type='text' name='Input' id='Input' placeholder='Chainsaws' value={value} className='h-full outline-none p-2 rounded-sm' />
-					<button type='submit' className='ml-1 py-2 px-3 bg-mainColor hover:bg-mainColorHover rounded-sm'>
+					<label>
+						<p className='absolute -top-5 text-gray-500 text-sm'>Tell me something about...</p>
+						<input ref={inputRef} onChange={onChange} type='text' name='Input' id='Input' placeholder='Chainsaws' value={value} className='h-full outline-none px-2 py-3 rounded-sm' />
+					</label>
+					<button disabled={!value} type='submit' className='ml-1 py-2 px-4 bg-mainColor hover:bg-mainColorHover rounded-sm'>
 						<SendIcon />
 					</button>
 				</div>

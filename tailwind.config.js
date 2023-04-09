@@ -8,6 +8,14 @@ module.exports = {
 				mainColor: '#EA638C',
 				mainColorHover: '#E7527F',
 				textColor: '#30343F'
+			},
+			animation: {
+				blinking: 'blink 1s steps(5, start) infinite'
+			},
+			keyframes: {
+				blink: {
+					to: { visibility: 'hidden' }
+				}
 			}
 		}
 	},

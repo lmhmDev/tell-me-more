@@ -11,6 +11,7 @@ export default function Home() {
 
 	const fetchData = async (promt:string) => {
 		setError('')
+		setFact('')
 		setLoading(true)
 		try {
 			fetch('/api/ask', {

@@ -48,7 +48,7 @@ export default function Home() {
 			<Layout>
 				<>
 					<Fact fact={fact} loading={loading} error={error} />
-					<ChatForm fetchData={fetchData} error={error}/>
+					<ChatForm fetchData={fetchData} error={error} />
 				</>
 			</Layout>
 		</>

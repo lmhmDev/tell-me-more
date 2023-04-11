@@ -10,6 +10,12 @@ export default function Home() {
 	const [error, setError] = useState('')
 
 	const fetchData = async (promt:string) => {
+		const dividedPromt = promt.split(' ')
+		if (dividedPromt.length > 2) {
+			setError('Too many words! Try using 2 or less 😁')
+			return
+		}
+
 		setError('')
 		setFact('')
 		setLoading(true)
@@ -42,7 +48,7 @@ export default function Home() {
 			<Layout>
 				<>
 					<Fact fact={fact} loading={loading} error={error} />
-					<ChatForm fetchData={fetchData} />
+					<ChatForm fetchData={fetchData} error={error}/>
 				</>
 			</Layout>
 		</>
